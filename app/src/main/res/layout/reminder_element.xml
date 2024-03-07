@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewStyle"
+    android:layout_width="350dp"
+    android:layout_height="140dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reminderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Погулять с питомцем Буга"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/reminderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reminderName"
+            android:layout_centerHorizontal="true"
+            android:text="в 19:00"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/reminderDate"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+        </View>
+
+        <TextView
+            android:id="@+id/reminderTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Осталось 5 часов 50 минут"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

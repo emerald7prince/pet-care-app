@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutNewPet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/newPetNameLabel"
+        android:text="@string/new_pet_name"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/newPetName"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"
+
+        android:hint="@string/new_pet_name_hint"
+        android:autofillHints=""
+        android:textColorHint="@color/grey"
+
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newPetNameLabel">
+    </EditText>
+
+    <Button
+        android:id="@+id/createPet"
+        android:text="@string/create_pet_button"
+        android:textSize="20sp"
+
+        android:enabled="false"
+        style="@style/SystemButtonStyle"
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <TextView
+        android:id="@+id/inputHint"
+        android:text="@string/input_hint"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+
+        android:layout_below="@+id/newPetName"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/spinnersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/inputHint"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp">
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:contentDescription="@string/spinner_gender_content"
+
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+        </Spinner>
+        <Spinner
+            android:id="@+id/spinnerPetType"
+            android:contentDescription="@string/spinner_type_content"
+
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/breedHint"
+        android:text="@string/breed_hint"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinnersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinnerBreed"
+        android:contentDescription="@string/spinner_breed_content"
+        android:spinnerMode="dialog"
+
+        android:layout_below="@+id/breedHint"
+        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/dateOfBirthLabel"
+        android:text="@string/date_of_birth_label"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinnerBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/dateOfBirth"
+        android:text="@string/date_of_birth_link_text"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:fontFamily="@font/finlandica_italic_variablefont_wght"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/dateOfBirthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</RelativeLayout>
